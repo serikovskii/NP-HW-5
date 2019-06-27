@@ -20,7 +20,7 @@
         </Grid.ColumnDefinitions>
         <materialDesign:Card materialDesign:ShadowAssist.ShadowDepth="Depth1" Grid.Column="0" Grid.Row="0" Height="70" Padding="10" Margin="10" Grid.ColumnSpan="2">
             <StackPanel Orientation="Horizontal">
-                <TextBox Name="ip" Height="25" TextWrapping="Wrap" FontSize="12" materialDesign:HintAssist.Hint="IP: 127.0.0.1" VerticalAlignment="Center" Margin="10" Width="100"/>
+                <TextBox Name="ip" Height="25" TextWrapping="Wrap" FontSize="12" materialDesign:HintAssist.Hint="IP: 235.5.5.1" VerticalAlignment="Center" Margin="10" Width="100"/>
                 <TextBox Name="port" Height="25" TextWrapping="Wrap" FontSize="12" materialDesign:HintAssist.Hint="Port: 12345" VerticalAlignment="Center" Margin="10" Width="90"/>
                 <TextBox Name="name" Height="25" TextWrapping="Wrap" FontSize="12" materialDesign:HintAssist.Hint="Enter Login" VerticalAlignment="Center" Margin="10" Width="150"/>
             </StackPanel>

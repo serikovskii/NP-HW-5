@@ -39,7 +39,7 @@ namespace NP_HW_5
             }
             else
             {
-                portEP = int.Parse(port.Text);
+                portEP = 12345;//int.Parse(port.Text);
                 client = new UdpClient(portEP, AddressFamily.InterNetwork);
                 client.JoinMulticastGroup(IPAddress.Parse(ipAddres), 20);
                 receiveThread = new Thread(ReceiveProc);
