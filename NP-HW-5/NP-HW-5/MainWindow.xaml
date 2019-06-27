@@ -1,0 +1,44 @@
+﻿<Window x:Class="NP_HW_5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:NP_HW_5"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="506.613" Width="859.516">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <materialDesign:Card materialDesign:ShadowAssist.ShadowDepth="Depth1" Grid.Column="0" Grid.Row="0" Height="70" Padding="10" Margin="10" Grid.ColumnSpan="2">
+            <StackPanel Orientation="Horizontal">
+                <TextBox Name="ip" Height="25" TextWrapping="Wrap" FontSize="12" materialDesign:HintAssist.Hint="IP: 127.0.0.1" VerticalAlignment="Center" Margin="10" Width="100"/>
+                <TextBox Name="port" Height="25" TextWrapping="Wrap" FontSize="12" materialDesign:HintAssist.Hint="Port: 12345" VerticalAlignment="Center" Margin="10" Width="90"/>
+                <TextBox Name="name" Height="25" TextWrapping="Wrap" FontSize="12" materialDesign:HintAssist.Hint="Enter Login" VerticalAlignment="Center" Margin="10" Width="150"/>
+            </StackPanel>
+        </materialDesign:Card>
+        <materialDesign:Card materialDesign:ShadowAssist.ShadowDepth="Depth1" Grid.Column="2" Grid.Row="0" Height="70" Padding="10" Margin="10">
+            <Button x:Name="connect" Content="Connect" Click="ConnectedButton" VerticalAlignment="Center" HorizontalAlignment="Center" Width="120"/>
+        </materialDesign:Card>
+        <materialDesign:Card materialDesign:ShadowAssist.ShadowDepth="Depth1" Grid.Column="1" Grid.Row="1" Height="250" Padding="10" Margin="10" Grid.ColumnSpan="2">
+            <RichTextBox Name="chat" HorizontalAlignment="Left" Height="220" VerticalAlignment="Top" Margin="5" Width="400" BorderThickness="0" Background="WhiteSmoke"/>
+        </materialDesign:Card>
+        <materialDesign:Card materialDesign:ShadowAssist.ShadowDepth="Depth1" Grid.Column="0" Grid.Row="1" Height="250" Padding="10" Margin="10">
+            <ListBox Name="clients" FontSize="13" HorizontalAlignment="Center" VerticalAlignment="Top" Width="200" Height="200"/>
+        </materialDesign:Card>
+        <materialDesign:Card materialDesign:ShadowAssist.ShadowDepth="Depth1" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2" Height="70" Padding="10" Margin="10">
+            <TextBox Name="message" Height="55" TextWrapping="Wrap" Padding="5" FontSize="13" Background="WhiteSmoke" materialDesign:HintAssist.Hint="Entry message" VerticalAlignment="Center" Margin="5"/>
+        </materialDesign:Card>
+        <materialDesign:Card materialDesign:ShadowAssist.ShadowDepth="Depth1" Grid.Column="2" Grid.Row="2" Height="70" Padding="10" Margin="10">
+            <Button Name="send" Content="Send" Click="SendMessage" VerticalAlignment="Center" HorizontalAlignment="Center" Width="120"/>
+        </materialDesign:Card>
+    </Grid>
+</Window>
